@@ -25,8 +25,7 @@ test = {
         },
         {
           'code': r"""
-          >>> 0 <= count_girls(2, 0.5) <= 2
-          True
+          >>> assert 0 <= count_girls(2, 0.5) <= 2
           """,
           'hidden': False,
           'locked': False
@@ -39,12 +38,9 @@ test = {
           >>> counts = np.zeros(10000)
           >>> for i in range(10000):
           ...     counts[i] = count_girls(6, 0.3)
-          >>> np.all(counts >= 0)
-          True
-          >>> np.all(counts <= 6)
-          True
-          >>> 1.75 <= np.mean(counts) <= 1.84
-          True
+          >>> assert np.all(counts >= 0)
+          >>> assert np.all(counts <= 6)
+          >>> assert 1.75 <= np.mean(counts) <= 1.84
           """,
           'hidden': False,
           'locked': False
@@ -57,12 +53,9 @@ test = {
           >>> counts = np.zeros(10000)
           >>> for i in range(10000):
           ...     counts[i] = count_girls(12, 0.7)
-          >>> np.all(counts >= 0)
-          True
-          >>> np.all(counts <= 12)
-          True
-          >>> 8.3 <= np.mean(counts) <= 8.46
-          True
+          >>> assert np.all(counts >= 0)
+          >>> assert np.all(counts <= 12)
+          >>> assert 8.3 <= np.mean(counts) <= 8.46
           """,
           'hidden': False,
           'locked': False
