@@ -6,16 +6,14 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> add(2, 3)
-          5
+          >>> assert add(2, 3) == 5
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> add(3, -1)
-          2
+          >>> assert add(3, -1) == 2
           """,
           'hidden': False,
           'locked': False

@@ -7,16 +7,14 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> subtract(5, 10)
-          -5
+          >>> assert subtract(5, 10) == -5
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> subtract(3, -1)
-          4
+          >>> assert subtract(3, -1) == 4
           """,
           'hidden': False,
           'locked': False

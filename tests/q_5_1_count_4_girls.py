@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # You haven't defined a count_4_girls function yet
-          >>> 'count_4_girls' in vars()
-          True
+          >>> assert 'count_4_girls' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -17,8 +16,7 @@ test = {
           'code': r"""
           >>> # count_4_girls is not a function
           >>> import types
-          >>> type(count_4_girls) is types.FunctionType
-          True
+          >>> assert type(count_4_girls) is types.FunctionType
           """,
           'hidden': False,
           'locked': False

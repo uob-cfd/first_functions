@@ -7,32 +7,28 @@ test = {
         {
           'code': r"""
           >>> # Oh dear - the function is returning None!
-          >>> divide(10, 2) is not None
-          True
+          >>> assert divide(10, 2) is not None
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> divide(10, 2)
-          5.0
+          >>> assert divide(10, 2) == 5.0
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> divide(4, 2)
-          2.0
+          >>> assert divide(4, 2) == 2.0
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> divide(25, 4)
-          6.25
+          >>> assert divide(25, 4) == 6.25
           """,
           'hidden': False,
           'locked': False

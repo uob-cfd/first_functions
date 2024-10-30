@@ -8,16 +8,14 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'my_total'
-          >>> 'my_total' in vars()
-          True
+          >>> assert 'my_total' in vars()
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> my_total
-          60
+          >>> assert my_total == 60
           """,
           'hidden': False,
           'locked': False
